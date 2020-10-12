@@ -25,6 +25,10 @@
   font-weight: oblique;
 }
 
+body {
+  background-color: #fcf8f5;
+}
+
 
 .nav-bar {
   display: grid;
@@ -108,8 +112,164 @@
 
 .flex-ofertas {
   display: flex;
+  max-width: 1300px;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.foto1 .foto2 {
-  flex: 1 1 300px;
+.flex {
+  flex-basis: 600px;
+  height: 300px;
+  border-radius: 25px;
 }
+
+.flex1 {
+  background: url("Fotos/Salchipapa-la-casa-verde.png") center;
+  background-size: cover;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.flex2 {
+  background: url("Fotos/vegetarianos-casa-verde-2.png") center;
+  background-size: cover;
+  margin-left: 5px;
+}
+
+.link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.flex-ofertas a:hover {
+  font-size: 30px;
+  opacity: 0.7;
+  color: white;
+  font-family: Metropolis;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #00c87f;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1210px;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: url("Fotos/Fondo-negro-casa-verde.png") center;
+  background-size: cover;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamb {
+  max-height: 300px;
+}
+
+.texto h2 {
+  font-family: Airwaves;
+  font-weight: oblique;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  word-spacing: 10px;
+  color: white;
+  text-shadow: 3px 3px #233236;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+.texto h3 {
+  font-family: "Historia";
+  font-size: 30px;
+  color: orange;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.texto a {
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-radius: 3em;
+  font-family: Metropolis;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0.75em 1em;
+  color: white;
+  text-align: center;
+  background: rgb(0,200,127);
+  background: linear-gradient(90deg, rgba(0,200,127,1) 0%, rgba(0,144,118,1) 35%);
+  box-shadow: 5px 5px 15px 1px #233236;
+  margin-top: 10px;
+}
+
+@media (max-width: 915px) {
+  .nav-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fcf8f5;
+    font-family: Metropolis;
+    font-weight: bold;
+  }
+
+  #carrito-top {
+    justify-self: center;
+
+  }
+
+  .hamb {
+    display: none;
+  }
+
+  .banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #fcf8f5;
+
+}
+
+
+
+
+/*
+.foto {
+  border-radius: 25px;
+  margin-top: 10px;
+  padding: 4px 8px;
+}
+
+.foto1 {
+  flex-basis: 600px;
+}
+
+.foto2 {
+  flex-basis: 600px;
+}
+*/
